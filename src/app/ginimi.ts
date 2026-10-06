@@ -6,7 +6,7 @@ const ai = new GoogleGenAI({
 
 export async function askGemini(message: string) {
     const response = await ai.models.generateContent({
-        model: "gimini-3.6-flash",
+      model: "gemini-3.1-flash-lite",
         contents: message,
     });
     return response.text;
